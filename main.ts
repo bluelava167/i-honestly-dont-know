@@ -139,6 +139,9 @@ sprites.onOverlap(SpriteKind.Special_Attack, SpriteKind.Boss, function (sprite, 
     sprites.destroy(sprite)
     statusbar.value += -50
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.SUPER_BOSS, function (sprite, otherSprite) {
+    game.gameOver(false)
+})
 statusbars.onZero(StatusBarKind.Health, function (status) {
     sprites.destroy(mySprite3, effects.fire, 100)
     sprites.destroy(statusbar)
