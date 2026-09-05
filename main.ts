@@ -172,7 +172,7 @@ sprites.onOverlap(SpriteKind.Special_Attack, SpriteKind.MEGA_BOSS, function (spr
 })
 statusbars.onZero(StatusBarKind.the1st, function (status) {
     sprites.destroy(_1st_boss)
-    info.changeScoreBy(500)
+    info.changeScoreBy(5000)
     beaten1st = 1
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.MEGA_BOSS, function (sprite, otherSprite) {
